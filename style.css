@@ -7,6 +7,18 @@
 }
 
 
+#svg1 {
+    transition: opacity 1.5s linear, filter 5s ease;
+}
+
+h3{
+    color: var(--text);
+}
+.muted {
+    color: var(--muted) !important;
+}
+
+
 * {
     font-family: 'Inter', sans-serif;
 }
