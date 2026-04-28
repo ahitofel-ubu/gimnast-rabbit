@@ -1,36 +1,51 @@
 :root {
     --primary: #bb1e10;
     --bg: #0f0f10;
+    --bg: black;
     --text: #f5f5f5;
     --muted: #b0b0b0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
     background: var(--bg);
+
 }
 
+
 .label {
+    font-family: 'Oswald', sans-serif;
     display: none;
 }
 
-/* hover desktop */
-.nav-item:hover .label {
-    display: inline;
+.nav-item {
+    font-size: large ;
+    font-weight: 500;
+    background: var(--primary);
+    color: var(--text);
+    border: 2pt solid var(--primary);
+    border-radius: 30rem 30rem;
+}
+.nav-item.active {
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--text);
+    border: 2pt solid var(--primary);
+    border-radius: 20px 20px 7px 7px;
 }
 
+
 /* stato attivo (per pagina corrente o click JS) */
+
 .nav-item.active .label {
     display: inline;
 }
 
 /* nasconde icona quando attivo/hover */
-.nav-item:hover .icon,
+
 .nav-item.active .icon {
     display: none;
 }
@@ -45,13 +60,18 @@ body {
 
 }
 
-.btn-my {
-    background: var(--primary);
-    color: var(--text);
-    border: 2pt solid var(--primary)
+/* .btn-my {
+    background: var(--primary) !important;
+    color: var(--text) !important;
+    border: 2pt solid var(--primary) !important;
+}
+
+.my-btn.active:hover {
+    background-color: #0f0f10 !important;
+    color: #f5f5f5 !important;
 }
 
 .btn-my:hover {
     background: none;
 
-}
+} */
