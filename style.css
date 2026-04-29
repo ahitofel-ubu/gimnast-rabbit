@@ -370,7 +370,22 @@ button:focus {
 }
 
 #svg1 {
-    transition: opacity 1.5s linear, filter 5s ease;
+
+    animation: breatheGlow 6s ease-out infinite;
+}
+
+@keyframes breatheGlow {
+    0%,100% {
+        opacity: 1;
+        filter: drop-shadow(0 0 0px black);
+    }
+
+    50% {
+        opacity: 0.6;
+        filter: drop-shadow(0 0 5px rgba(187,30,16,0.8))
+                drop-shadow(0 0 30px rgba(255,0,0,0.2))
+                drop-shadow(0 0 50px rgba(255,0,0,0.1));
+    }
 }
 
 h3 {

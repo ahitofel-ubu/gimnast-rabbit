@@ -5,20 +5,7 @@ document.querySelectorAll(".nav-item").forEach(btn => {
         btn.classList.add("active");
     });
 });
-window.addEventListener("scroll", function () {
 
-    let scroll = window.scrollY;
-    let intensity = Math.min(scroll / 300, 1);
-    let opacity = 1 - (scroll / 200);
-
-    document.querySelector("#svg1").style.filter =
-        `drop-shadow(0 0 ${10 * intensity}px rgba(187,30,16,${intensity}))`;
-
-    if(opacity < 0) opacity = 0;
-
-    document.querySelector("#svg1").style.opacity = opacity;
-
-});
 
 const { gsap, imagesLoaded } = window;
 
