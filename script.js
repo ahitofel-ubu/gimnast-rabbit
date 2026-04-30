@@ -45,10 +45,10 @@ window.addEventListener("scroll", () => {
 
             // ✨ fade out testo hero
             const hero = document.querySelector(".hero-content");
-            hero.style.opacity = 1 - scroll / 500;
+            hero.style.opacity = 1 - scroll / 900;
 
             hero.style.transform =
-                `translateY(${scroll * 0.2}px)`;
+                `translateY(${scroll * 0.8}px)`;
 
             ticking = false;
         });
