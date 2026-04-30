@@ -6,11 +6,7 @@
     --muted: #b0b0b0;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* {}
 
 .title {
     font-family: 'Oswald', sans-serif;
@@ -18,14 +14,14 @@
     font-weight: 800;
     text-align: center;
     color: black;
-  
+
     -webkit-text-stroke: 0.2px var(--primary);
     text-shadow: 0.8px 0.8px 0.5px rgba(187, 30, 16, 1), 0 3px 3px rgba(255, 0, 0, 0.2), 0 0 10px rgba(255, 0, 0, 0.1);
 }
 
 .evidenziato {
     color: black;
-  
+
     -webkit-text-stroke: 0.2px var(--primary);
     text-shadow: 0.8px 0.8px 0.5px rgba(187, 30, 16, 1), 0 3px 3px rgba(255, 0, 0, 0.2), 0 0 10px rgba(255, 0, 0, 0.1);
 }
@@ -41,6 +37,7 @@ body {
 .hero {
     height: 100vh;
     position: relative;
+
 
 }
 
@@ -63,12 +60,12 @@ body {
 
 /* TESTO HERO */
 .hero-content {
-    height: 40vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    transition: transform 1s ease-out;
     color: white;
     text-align: center;
 }
@@ -160,4 +157,7 @@ h3 {
     border-bottom: 1.6px solid rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 4rem 1rem;
 }
