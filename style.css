@@ -14,12 +14,20 @@
 
 .title {
     font-family: 'Oswald', sans-serif;
-    font-size: 3rem;
-    font-weight: bolder;
-    color: transparent;
+    font-size: 10vw;
+    font-weight: 800;
     text-align: center;
-    margin: 2rem 0;
-    -webkit-text-stroke: 2px var(--primary);
+    color: black;
+  
+    -webkit-text-stroke: 0.2px var(--primary);
+    text-shadow: 0.8px 0.8px 0.5px rgba(187, 30, 16, 1), 0 3px 3px rgba(255, 0, 0, 0.2), 0 0 10px rgba(255, 0, 0, 0.1);
+}
+
+.evidenziato {
+    color: black;
+  
+    -webkit-text-stroke: 0.2px var(--primary);
+    text-shadow: 0.8px 0.8px 0.5px rgba(187, 30, 16, 1), 0 3px 3px rgba(255, 0, 0, 0.2), 0 0 10px rgba(255, 0, 0, 0.1);
 }
 
 body {
@@ -33,7 +41,7 @@ body {
 .hero {
     height: 100vh;
     position: relative;
-  
+
 }
 
 /* BACKGROUND PARALLAX */
@@ -47,7 +55,7 @@ body {
     z-index: -3;
     transform: scale(1.1);
     /* effetto zoom iniziale */
-    transition: opacity 2s ease-out, transform 1s ease-out, background-image 2s ease-in-out;
+    transition: opacity 2s ease-out, transform 0.5s ease-out, background-image 1s ease-in-out;
 }
 
 /* OVERLAY CINEMATICO */

@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
     const trigger = 150;
     const bg = document.querySelector(".bg");
     if (window.scrollY > trigger) {
-        bg.style.opacity = "1";
+        bg.style.opacity = "0.4";
     } else {
         bg.style.opacity = "0";
     }
@@ -22,7 +22,7 @@ window.addEventListener("scroll", () => {
     if (!ticking) {
         window.requestAnimationFrame(() => {
 
-            const scroll = window.scrollY;
+            const scroll = window.scrollY * 0.8;
             
 
             // 🌄 background lento + zoom dinamico
@@ -42,9 +42,6 @@ window.addEventListener("scroll", () => {
                 bg.style.backgroundImage = "url('bg1.jpg')";
             }
 
-            // 🌫 overlay leggero movimento
-            document.querySelector(".title").style.transform =
-                `translateY(${scroll * 0.6}px)`;
 
             // ✨ fade out testo hero
             const hero = document.querySelector(".hero-content");
