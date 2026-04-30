@@ -1,0 +1,7 @@
+// 1. Imposta le tue variabili (Senza !default)
+$primary: #bb1e01;
+
+
+// 2. Importa solo le parti di Bootstrap che ti servono 
+// o tutto Bootstrap dai node_modules
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

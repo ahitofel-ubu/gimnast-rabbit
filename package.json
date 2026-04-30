@@ -1,0 +1,17 @@
+{
+  "name": "gimnast-rabbit",
+  "version": "1.0.0",
+  "description": "A repo for a flask web app for a gym.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/custom.scss:dist/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.99.0"
+  }
+}
